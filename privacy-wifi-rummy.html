@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — WiFi Rummy Multiplayer | LiPi Apps</title>
+    <meta name="description" content="Privacy Policy for WiFi Rummy Multiplayer mobile application.">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0A0E17;
+            color: #E2E8F0;
+            line-height: 1.7;
+        }
+        
+        /* NAV */
+        nav {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            padding: 16px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 14, 23, 0.9);
+            backdrop-filter: blur(20px);
+            z-index: 100;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #F5C542, #FF8A00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+        }
+        
+        .nav-links { display: flex; gap: 24px; list-style: none; }
+        .nav-links a {
+            color: #94A3B8;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover, .nav-links a.active { color: #F5C542; }
+        
+        /* CONTAINER */
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 60px 40px 80px;
+        }
+        
+        /* HEADER */
+        .page-header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        
+        .page-badge {
+            display: inline-block;
+            padding: 6px 18px;
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            border-radius: 50px;
+            font-size: 11px;
+            color: #38BDF8;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        
+        .page-header h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            margin-bottom: 12px;
+            color: #FFFFFF;
+        }
+        
+        .page-header h1 span {
+            background: linear-gradient(135deg, #F5C542, #FF8A00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .app-name {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(245, 197, 66, 0.08);
+            border: 1px solid rgba(245, 197, 66, 0.25);
+            border-radius: 50px;
+            font-size: 13px;
+            color: #F5C542;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        .last-updated {
+            color: #64748B;
+            font-size: 14px;
+        }
+        
+        /* CONTENT */
+        .content h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-top: 40px;
+            margin-bottom: 14px;
+            padding-left: 14px;
+            border-left: 3px solid #F5C542;
+            letter-spacing: -0.3px;
+        }
+        
+        .content h2:first-child { margin-top: 0; }
+        
+        .content h3 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #F5C542;
+            margin-top: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .content p {
+            color: #CBD5E1;
+            font-size: 15px;
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+        
+        .content ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        
+        .content ul li {
+            position: relative;
+            padding: 8px 0 8px 32px;
+            color: #CBD5E1;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        
+        .content ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(245, 197, 66, 0.12);
+            color: #F5C542;
+            border-radius: 50%;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        
+        .content a {
+            color: #F5C542;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(245, 197, 66, 0.3);
+            transition: border-color 0.3s;
+        }
+        
+        .content a:hover { border-bottom-color: #F5C542; }
+        
+        .content strong {
+            color: #FFFFFF;
+            font-weight: 700;
+        }
+        
+        .info-box {
+            padding: 24px;
+            background: linear-gradient(135deg, #141B2B 0%, #0F172A 100%);
+            border: 1px solid rgba(56, 189, 248, 0.15);
+            border-left: 3px solid #38BDF8;
+            border-radius: 14px;
+            margin: 28px 0;
+        }
+        
+        .info-box p { margin: 0; color: #94A3B8; font-size: 14px; }
+        
+        /* CONTACT CARD */
+        .contact-card {
+            margin-top: 48px;
+            padding: 40px 32px;
+            background: linear-gradient(135deg, #141B2B 0%, #0F172A 100%);
+            border: 1.5px solid rgba(56, 189, 248, 0.2);
+            border-radius: 22px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #38BDF8, #6366F1);
+        }
+        
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #38BDF8, #6366F1);
+            font-size: 26px;
+            box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+        }
+        
+        .contact-card h3 {
+            color: #FFFFFF;
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        
+        .contact-card p {
+            color: #94A3B8;
+            margin-bottom: 24px;
+            font-size: 14px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* EMAIL CARD */
+        .email-card {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 24px;
+            background: #0A0E17;
+            border: 1.5px solid rgba(56, 189, 248, 0.35);
+            border-radius: 14px;
+            text-decoration: none;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .email-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.15), transparent);
+            transition: left 0.6s;
+        }
+        
+        .email-card:hover::before { left: 100%; }
+        
+        .email-card:hover {
+            border-color: #38BDF8;
+            transform: translateY(-3px);
+            box-shadow: 0 14px 32px rgba(56, 189, 248, 0.25);
+        }
+        
+        .email-icon-sm {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #38BDF8, #6366F1);
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        
+        .email-text { text-align: left; }
+        
+        .email-label-sm {
+            font-size: 10px;
+            color: #64748B;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+        
+        .email-address-sm {
+            font-size: 15px;
+            font-weight: 700;
+            color: #FFFFFF;
+            letter-spacing: 0.2px;
+        }
+        
+        .email-arrow-sm {
+            color: #38BDF8;
+            font-size: 18px;
+            transition: transform 0.3s;
+            margin-left: 4px;
+        }
+        
+        .email-card:hover .email-arrow-sm { transform: translateX(4px); }
+        
+        /* BACK LINK */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #64748B;
+            text-decoration: none;
+            font-size: 13px;
+            margin-bottom: 24px;
+            transition: color 0.3s;
+        }
+        
+        .back-link:hover { color: #F5C542; }
+        
+        /* FOOTER */
+        footer {
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            background: #0A0E17;
+        }
+        .footer-links {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: #64748B;
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover { color: #F5C542; }
+        footer p { color: #475569; font-size: 13px; }
+        
+        @media (max-width: 768px) {
+            nav { padding: 14px 20px; }
+            .nav-links { gap: 16px; }
+            .nav-links a { font-size: 13px; }
+            .container { padding: 40px 20px 60px; }
+            .email-card { padding: 14px 18px; }
+            .email-address-sm { font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a href="https://sangeetha1990a.github.io/lipiapps/" class="logo">LiPi Apps</a>
+        <ul class="nav-links">
+            <li><a href="https://sangeetha1990a.github.io/lipiapps/">Home</a></li>
+            <li><a href="privacy-wifi-rummy.html" class="active">Privacy</a></li>
+            <li><a href="terms-wifi-rummy.html">Terms</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENT -->
+    <div class="container">
+        
+        <a href="https://sangeetha1990a.github.io/lipiapps/" class="back-link">← Back to Home</a>
+        
+        <div class="page-header">
+            <div class="page-badge">Legal</div>
+            <div class="app-name">WiFi Rummy Multiplayer</div>
+            <div class="app-card">
+                <img src="wifi_rummy_icon.png" alt="WiFi Rummy Multiplayer" loading="lazy">
+            </div>
+            <h1>Privacy <span>Policy</span></h1>
+            <p class="last-updated">Last Updated: September 6, 2026</p>
+        </div>
+        
+        <div class="content">
+            
+            <p>
+                This Privacy Policy applies to the <strong>WiFi Rummy Multiplayer</strong> 
+                mobile application (referred to as the "Application"), provided by 
+                <strong>Sangeetha</strong> (referred to as the "Service Provider").
+            </p>
+            
+            <p>
+                WiFi Rummy is provided as a free, ad-supported application with optional 
+                in-app purchases. The Application is designed primarily for local 
+                multiplayer gameplay between nearby devices using WiFi or a mobile hotspot.
+            </p>
+            
+            <p>
+                By using the Application, you acknowledge the practices described in this 
+                Privacy Policy.
+            </p>
+            
+            <div class="info-box">
+                <p>
+                    <strong style="color: #38BDF8;">Summary:</strong> WiFi Rummy is designed 
+                    for local multiplayer gameplay. We do not collect personal information 
+                    directly. Ads and in-app purchases are handled by Google's services.
+                </p>
+            </div>
+            
+            <h2>Information Collection and Use</h2>
+            <p>
+                WiFi Rummy is designed so that local multiplayer gameplay can take place 
+                between nearby devices without requiring an internet connection or a 
+                remote game server.
+            </p>
+            
+            <h3>Information We Do Not Collect for Gameplay</h3>
+            <p>
+                For local gameplay purposes, WiFi Rummy does not require users to create 
+                an online account and does not collect or transmit the following 
+                information to our own servers:
+            </p>
+            <ul>
+                <li>Email address</li>
+                <li>Phone number</li>
+                <li>Postal address</li>
+                <li>Precise location</li>
+                <li>Personal profile information for online accounts</li>
+            </ul>
+            
+            <p>
+                Player names entered in the Application are used for gameplay and may be 
+                stored locally on the device. They may also be transmitted locally to 
+                other players' devices when required for a multiplayer game.
+            </p>
+            
+            <p>
+                Game information, such as player names, cards, scores, game state, and 
+                game settings, may be exchanged between participating devices during a 
+                local multiplayer session.
+            </p>
+            
+            <p>
+                This multiplayer communication is intended to take place directly between 
+                the participating devices and is not sent to a WiFi Rummy remote game server.
+            </p>
+            
+            <h2>Local Multiplayer Communication</h2>
+            <p>
+                WiFi Rummy supports multiplayer games over the same local WiFi network 
+                or mobile hotspot.
+            </p>
+            
+            <p>During a multiplayer game, devices may exchange information required to operate the game, including:</p>
+            <ul>
+                <li>Player names</li>
+                <li>Game and round information</li>
+                <li>Card and game state information</li>
+                <li>Scores</li>
+                <li>Game actions</li>
+                <li>Connection and synchronization information</li>
+                <li>Chat messages sent by players during the game</li>
+            </ul>
+            
+            <p>
+                This information is exchanged between participating devices for the 
+                purpose of providing multiplayer gameplay.
+            </p>
+            
+            <p>
+                The Application does not operate a remote server that stores players' 
+                multiplayer game data.
+            </p>
+            
+            <p>
+                Where supported by the Application, multiplayer data is transferred 
+                using encrypted communication. However, the security of the underlying 
+                WiFi network, mobile hotspot, or other local network is outside the 
+                control of the Service Provider.
+            </p>
+            
+            <h2>Local Storage</h2>
+            <p>
+                WiFi Rummy may store certain information locally on your device to 
+                provide application functionality, such as:
+            </p>
+            <ul>
+                <li>Player name and profile settings</li>
+                <li>Game settings and preferences</li>
+                <li>Saved game information</li>
+                <li>Game scores and round information</li>
+                <li>Application settings</li>
+                <li>Technical identifiers required for application functionality</li>
+            </ul>
+            
+            <p>
+                This locally stored information is not intended to be transmitted to a 
+                WiFi Rummy remote server.
+            </p>
+            
+            <p>
+                You can generally remove locally stored application data through the 
+                Android device settings or by uninstalling the Application. Some 
+                application settings or saved information may be lost when local 
+                application data is deleted.
+            </p>
+            
+            <h2>Advertising</h2>
+            <p>
+                WiFi Rummy uses third-party advertising services, including 
+                <strong>Google AdMob</strong>, to display advertisements.
+            </p>
+            
+            <p>
+                Advertisements may be shown in areas of the Application such as AI 
+                Practice Mode and may also be used as part of the optional rewarded-ad 
+                system for unlocking multiplayer gameplay for free users.
+            </p>
+            
+            <p>
+                Third-party advertising providers may automatically collect or process 
+                certain information from the device when advertisements are requested 
+                or displayed. Depending on the applicable advertising configuration and 
+                user settings, this may include information such as:
+            </p>
+            <ul>
+                <li>IP address</li>
+                <li>Advertising ID or other advertising-related identifiers</li>
+                <li>Device information</li>
+                <li>Application and advertising interaction information</li>
+                <li>Approximate location derived from IP address</li>
+                <li>Diagnostic and performance information</li>
+            </ul>
+            
+            <p>
+                This information may be used by the advertising provider for purposes 
+                such as delivering, measuring, personalizing, and improving 
+                advertisements, detecting invalid activity, and maintaining advertising 
+                services.
+            </p>
+            
+            <p>
+                The Service Provider does not directly receive or store users' payment 
+                card information or other payment credentials through WiFi Rummy.
+            </p>
+            
+            <p>
+                For more information about how Google handles information in connection 
+                with advertising services, please review Google's applicable privacy 
+                information: 
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+                    https://policies.google.com/privacy
+                </a>
+            </p>
+            
+            <h2>In-App Purchases</h2>
+            <p>
+                WiFi Rummy offers an optional one-time Premium in-app purchase.
+            </p>
+            
+            <p>
+                Payments and purchase processing are handled through 
+                <strong>Google Play's billing services</strong>. WiFi Rummy does not 
+                collect or store users' credit card numbers, debit card numbers, bank 
+                account information, or other payment credentials.
+            </p>
+            
+            <p>
+                Google Play may process purchase-related information according to 
+                Google's terms and privacy policies.
+            </p>
+            
+            <p>
+                For information about Google Play's privacy practices, please visit: 
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+                    https://policies.google.com/privacy
+                </a>
+            </p>
+            
+            <h2>Location Information and Permissions</h2>
+            <p>
+                WiFi Rummy does not use or collect a user's precise physical location 
+                for gameplay purposes.
+            </p>
+            
+            <p>
+                Depending on the Android version and the networking or device-discovery 
+                functionality being used, Android may require certain permissions for 
+                WiFi, nearby-device, Bluetooth, or network discovery features.
+            </p>
+            
+            <p>
+                If Android requests a location-related permission for a networking 
+                feature, that permission does not mean that WiFi Rummy uses the user's 
+                precise physical location for gameplay.
+            </p>
+            
+            <p>
+                WiFi Rummy does not intentionally collect, store, or transmit a user's 
+                precise GPS location to a WiFi Rummy server.
+            </p>
+            
+            <p>
+                Third-party services, such as advertising services, may independently 
+                process approximate location information as described in their 
+                respective privacy policies.
+            </p>
+            
+            <h2>Device and Technical Information</h2>
+            <p>
+                WiFi Rummy itself does not maintain an online user account system.
+            </p>
+            
+            <p>
+                Certain technical information or identifiers may be processed locally 
+                on the device or by third-party services used by the Application when 
+                necessary to provide functionality, security, advertising, diagnostics, 
+                or prevent abuse.
+            </p>
+            
+            <p>Third-party services may automatically process technical information such as:</p>
+            <ul>
+                <li>Device type and model</li>
+                <li>Operating system and version</li>
+                <li>Application version</li>
+                <li>Advertising identifiers</li>
+                <li>IP address</li>
+                <li>Diagnostic information</li>
+                <li>Crash or performance information</li>
+                <li>Advertising and application interaction information</li>
+            </ul>
+            
+            <p>
+                The exact information collected by third-party services depends on the 
+                services enabled in the Application and their applicable policies.
+            </p>
+            
+            <h2>Chat and User-Generated Content</h2>
+            <p>
+                WiFi Rummy provides an in-game chat feature for multiplayer sessions.
+            </p>
+            
+            <p>
+                Messages entered into the multiplayer chat are transmitted between 
+                participating devices as part of the local multiplayer session.
+            </p>
+            
+            <p>
+                WiFi Rummy does not operate a remote server that stores multiplayer 
+                chat messages.
+            </p>
+            
+            <p>
+                Users are responsible for the content they choose to send through the 
+                in-game chat feature.
+            </p>
+            
+            <h2>Cookies and Similar Technologies</h2>
+            <p>
+                WiFi Rummy is a mobile application and does not directly use browser 
+                cookies as part of its core gameplay.
+            </p>
+            
+            <p>
+                Third-party services integrated into the Application may use identifiers, 
+                SDK technologies, or similar technologies to provide advertising, 
+                analytics, security, or other services.
+            </p>
+            
+            <p>
+                The use of such technologies by third-party providers is governed by 
+                their respective privacy policies.
+            </p>
+            
+            <h2>Third-Party Services</h2>
+            <p>
+                WiFi Rummy may use third-party services to provide certain functionality, 
+                including advertising, payment processing, diagnostics, or other 
+                application services.
+            </p>
+            
+            <p>These services may process information according to their own privacy policies.</p>
+            
+            <p>Examples may include:</p>
+            <ul>
+                <li>Google AdMob for advertising</li>
+                <li>Google Play services and Google Play Billing for application distribution and in-app purchases</li>
+            </ul>
+            
+            <p>
+                Third-party services are independently operated and are not controlled 
+                by the Service Provider.
+            </p>
+            
+            <p>
+                Users should review the privacy policies of these third-party providers 
+                for more information about their data practices.
+            </p>
+            
+            <h2>Data Retention and Deletion</h2>
+            <p>
+                WiFi Rummy does not maintain user accounts or a remote database 
+                containing users' personal information for normal gameplay.
+            </p>
+            
+            <p>
+                Information such as player settings, saved games, scores, and other 
+                application data may remain locally on the device until the user 
+                deletes the application data, uses an available in-app deletion/reset 
+                function, or uninstalls the Application.
+            </p>
+            
+            <p>
+                Multiplayer game data and chat messages exchanged between devices are 
+                intended for the current local multiplayer session and are not stored 
+                by a WiFi Rummy remote server.
+            </p>
+            
+            <p>
+                Third-party service providers, including advertising and payment 
+                providers, may retain information according to their own policies and 
+                legal requirements.
+            </p>
+            
+            <p>
+                Because WiFi Rummy does not maintain a remote user account containing 
+                personal information, there is generally no WiFi Rummy online account 
+                from which a user needs to request personal-data deletion.
+            </p>
+            
+            <h2>Security</h2>
+            <p>
+                We take reasonable measures to protect the information handled by the 
+                Application.
+            </p>
+            
+            <p>
+                Local multiplayer communication may use encrypted data transfer. However, 
+                no method of electronic transmission or storage is completely secure.
+            </p>
+            
+            <p>
+                The Service Provider cannot guarantee the security of the user's WiFi 
+                network, mobile hotspot, Android device, or third-party services.
+            </p>
+            
+            <p>
+                Users should use trusted networks and keep their Android devices and 
+                the Application updated.
+            </p>
+            
+            <h2>Children's Privacy</h2>
+            <p>
+                WiFi Rummy is not directed specifically to children under the age of 13.
+            </p>
+            
+            <p>
+                We do not knowingly collect personal information from children under 13 
+                through a WiFi Rummy online account or remote server.
+            </p>
+            
+            <p>
+                Because WiFi Rummy does not require an online user account for gameplay, 
+                the Application does not intentionally request personal information such 
+                as a child's email address, phone number, or physical address for 
+                account creation.
+            </p>
+            
+            <p>
+                Third-party services integrated into the Application, including 
+                advertising services, may have their own requirements regarding children 
+                and age-based advertising. Their data practices are governed by their 
+                respective policies and applicable laws.
+            </p>
+            
+            <p>
+                If you believe that a child has provided personal information directly 
+                to the Service Provider, please contact us using the contact information 
+                below.
+            </p>
+            
+            <h2>Your Choices</h2>
+            <p>Depending on your device, Android version, and applicable third-party service settings, you may have choices regarding:</p>
+            <ul>
+                <li>Advertising personalization</li>
+                <li>Advertising identifiers</li>
+                <li>Application permissions</li>
+                <li>Device-level privacy settings</li>
+                <li>Deletion of locally stored application data</li>
+                <li>Uninstalling the Application</li>
+            </ul>
+            
+            <p>
+                You can manage available Android permissions and privacy settings 
+                through your device's Android settings.
+            </p>
+            
+            <p>
+                Advertising preferences may also be available through Google or your 
+                Android device, depending on your location and device configuration.
+            </p>
+            
+            <h2>Changes to This Privacy Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time.
+            </p>
+            
+            <p>
+                When changes are made, the updated Privacy Policy will be published on 
+                this page with a revised "Last Updated" date.
+            </p>
+            
+            <p>
+                We encourage users to review this Privacy Policy periodically to stay 
+                informed about how the Application handles information.
+            </p>
+            
+            <h2>Disclaimer / Limitation of Liability</h2>
+            <p>
+                WiFi Rummy is provided on an "AS IS" and "AS AVAILABLE" basis, to the 
+                extent permitted by applicable law.
+            </p>
+            
+            <p>The Service Provider is not responsible for:</p>
+            <ul>
+                <li>Loss or interruption caused by WiFi networks, mobile hotspots, or internet service providers</li>
+                <li>Device incompatibility or operating system limitations</li>
+                <li>Problems caused by third-party services</li>
+                <li>Availability or operation of third-party advertising or payment services</li>
+                <li>User-generated content or actions of other players</li>
+                <li>Misuse of the Application</li>
+                <li>Security issues originating from networks or devices outside the control of the Service Provider</li>
+            </ul>
+            
+            <p>
+                Nothing in this Privacy Policy is intended to limit any rights or 
+                protections that cannot legally be excluded or limited under applicable law.
+            </p>
+            
+            <!-- CONTACT CARD -->
+            <div class="contact-card">
+                <div class="contact-icon">💬</div>
+                <h3>Have Questions?</h3>
+                <p>If you have any questions about this Privacy Policy, feel free to reach out.</p>
+                
+                <a href="mailto:sangeetha1990a@gmail.com" class="email-card">
+                    <div class="email-icon-sm">📧</div>
+                    <div class="email-text">
+                        <div class="email-label-sm">Email us</div>
+                        <div class="email-address-sm">sangeetha1990a@gmail.com</div>
+                    </div>
+                    <div class="email-arrow-sm">→</div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://sangeetha1990a.github.io/lipiapps/">Home</a>
+            <a href="privacy-wifi-rummy.html">Privacy</a>
+            <a href="terms-wifi-rummy.html">Terms</a>
+            <a href="mailto:sangeetha1990a@gmail.com">Contact</a>
+        </div>
+        <p>© 2026 LiPi Apps. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

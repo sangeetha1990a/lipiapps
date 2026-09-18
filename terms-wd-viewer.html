@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions — WD Viewer | LiPi Apps</title>
+    <meta name="description" content="Terms & Conditions for WD Viewer mobile application.">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0A0E17;
+            color: #E2E8F0;
+            line-height: 1.7;
+        }
+        
+        nav {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            padding: 16px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 14, 23, 0.9);
+            backdrop-filter: blur(20px);
+            z-index: 100;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #F5C542, #FF8A00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+        }
+        
+        .nav-links { display: flex; gap: 24px; list-style: none; }
+        .nav-links a {
+            color: #94A3B8;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover, .nav-links a.active { color: #F5C542; }
+        
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 60px 40px 80px;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        
+        .page-badge {
+            display: inline-block;
+            padding: 6px 18px;
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.25);
+            border-radius: 50px;
+            font-size: 11px;
+            color: #A78BFA;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        
+        .app-name {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(245, 197, 66, 0.08);
+            border: 1px solid rgba(245, 197, 66, 0.25);
+            border-radius: 50px;
+            font-size: 13px;
+            color: #F5C542;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        .page-header h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            margin-bottom: 12px;
+            color: #FFFFFF;
+        }
+        
+        .page-header h1 span {
+            background: linear-gradient(135deg, #F5C542, #FF8A00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .last-updated {
+            color: #64748B;
+            font-size: 14px;
+        }
+        
+        .content h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-top: 40px;
+            margin-bottom: 14px;
+            padding-left: 14px;
+            border-left: 3px solid #F5C542;
+            letter-spacing: -0.3px;
+        }
+        
+        .content h2:first-child { margin-top: 0; }
+        
+        .content p {
+            color: #CBD5E1;
+            font-size: 15px;
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+        
+        .content ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        
+        .content ul li {
+            position: relative;
+            padding: 8px 0 8px 32px;
+            color: #CBD5E1;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        
+        .content ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(245, 197, 66, 0.12);
+            color: #F5C542;
+            border-radius: 50%;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        
+        .content a {
+            color: #F5C542;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(245, 197, 66, 0.3);
+            transition: border-color 0.3s;
+        }
+        
+        .content a:hover { border-bottom-color: #F5C542; }
+        
+        .content strong { color: #FFFFFF; font-weight: 700; }
+        
+        .info-box {
+            padding: 24px;
+            background: linear-gradient(135deg, #141B2B 0%, #0F172A 100%);
+            border: 1px solid rgba(139, 92, 246, 0.15);
+            border-left: 3px solid #A78BFA;
+            border-radius: 14px;
+            margin: 28px 0;
+        }
+        
+        .info-box p { margin: 0; color: #94A3B8; font-size: 14px; }
+        
+        .contact-card {
+            margin-top: 48px;
+            padding: 40px 32px;
+            background: linear-gradient(135deg, #141B2B 0%, #0F172A 100%);
+            border: 1.5px solid rgba(139, 92, 246, 0.2);
+            border-radius: 22px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #A78BFA, #8B5CF6);
+        }
+        
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #A78BFA, #8B5CF6);
+            font-size: 26px;
+            box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);
+        }
+        
+        .contact-card h3 {
+            color: #FFFFFF;
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        
+        .contact-card p {
+            color: #94A3B8;
+            margin-bottom: 24px;
+            font-size: 14px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .email-card {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 24px;
+            background: #0A0E17;
+            border: 1.5px solid rgba(139, 92, 246, 0.35);
+            border-radius: 14px;
+            text-decoration: none;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .email-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.15), transparent);
+            transition: left 0.6s;
+        }
+        
+        .email-card:hover::before { left: 100%; }
+        
+        .email-card:hover {
+            border-color: #A78BFA;
+            transform: translateY(-3px);
+            box-shadow: 0 14px 32px rgba(139, 92, 246, 0.25);
+        }
+        
+        .email-icon-sm {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #A78BFA, #8B5CF6);
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        
+        .email-text { text-align: left; }
+        
+        .email-label-sm {
+            font-size: 10px;
+            color: #64748B;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+        
+        .email-address-sm {
+            font-size: 15px;
+            font-weight: 700;
+            color: #FFFFFF;
+            letter-spacing: 0.2px;
+        }
+        
+        .email-arrow-sm {
+            color: #A78BFA;
+            font-size: 18px;
+            transition: transform 0.3s;
+            margin-left: 4px;
+        }
+        
+        .email-card:hover .email-arrow-sm { transform: translateX(4px); }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #64748B;
+            text-decoration: none;
+            font-size: 13px;
+            margin-bottom: 24px;
+            transition: color 0.3s;
+        }
+        
+        .back-link:hover { color: #F5C542; }
+        
+        footer {
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            background: #0A0E17;
+        }
+        .footer-links {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: #64748B;
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover { color: #F5C542; }
+        footer p { color: #475569; font-size: 13px; }
+        
+        @media (max-width: 768px) {
+            nav { padding: 14px 20px; }
+            .nav-links { gap: 16px; }
+            .nav-links a { font-size: 13px; }
+            .container { padding: 40px 20px 60px; }
+            .email-card { padding: 14px 18px; }
+            .email-address-sm { font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="https://sangeetha1990a.github.io/lipiapps/" class="logo">LiPi Apps</a>
+        <ul class="nav-links">
+            <li><a href="https://sangeetha1990a.github.io/lipiapps/">Home</a></li>
+            <li><a href="privacy-wd-viewer.html">Privacy</a></li>
+            <li><a href="terms-wd-viewer.html" class="active">Terms</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <a href="https://sangeetha1990a.github.io/lipiapps/" class="back-link">← Back to Home</a>
+        
+        <div class="page-header">
+            <div class="page-badge">Legal</div>
+            <div class="app-name">WD Viewer</div>
+            <div class="app-card">
+                <img src="wd-viewer_icon.png" alt="WiFi Rummy Multiplayer" loading="lazy">
+            </div>
+            <h1>Terms & <span>Conditions</span></h1>
+            <p class="last-updated">Last updated: September 10, 2026</p>
+        </div>
+        
+        <div class="content">
+            
+            <p>
+                These Terms & Conditions apply to the <strong>WD Export Chat Viewer</strong> 
+                app (hereinafter referred to as the "Application"), developed by 
+                <strong>Lipi-Apps</strong> (hereinafter referred to as the "Service Provider").
+            </p>
+            
+            <p>
+                By downloading, installing, or using the Application, you agree to these 
+                Terms & Conditions. If you do not agree with these Terms, please do not 
+                use the Application.
+            </p>
+            
+            <div class="info-box">
+                <p>
+                    <strong style="color: #A78BFA;">Summary:</strong> WD Viewer is an independent 
+                    utility for viewing exported chat files. Not affiliated with WhatsApp or Meta. 
+                    You are responsible for the content you import and share.
+                </p>
+            </div>
+            
+            <h2>1. About the Application</h2>
+            <p>
+                WD Export Chat Viewer is a utility application designed to help users view, 
+                search, organize, and manage exported chat files.
+            </p>
+            
+            <p>The Application may provide features including:</p>
+            <ul>
+                <li>Viewing exported chat text files in an easy-to-read format</li>
+                <li>Searching messages by date, user, keywords, or excluded words</li>
+                <li>Supporting large chat files and message collections</li>
+                <li>Organizing imported chat files</li>
+                <li>Copying and sharing chat messages</li>
+                <li>Backup and restore functionality</li>
+                <li>Multiple methods for importing supported files</li>
+                <li>Remembering the last reading position</li>
+            </ul>
+            
+            <p>
+                Features may vary depending on the Application version, device, operating 
+                system, and supported file formats.
+            </p>
+            
+            <h2>2. User Files and Content</h2>
+            <p>
+                The Application allows users to import and view files that they provide.
+            </p>
+            
+            <p>
+                You are responsible for the files and content that you import, view, copy, 
+                share, back up, restore, or otherwise use through the Application.
+            </p>
+            
+            <p>
+                You should only import, copy, share, or distribute content when you have 
+                the necessary rights, permissions, or legal authority to do so.
+            </p>
+            
+            <p>
+                The Service Provider does not claim ownership of your imported files or 
+                the content contained within them.
+            </p>
+            
+            <h2>3. Privacy and Chat Content</h2>
+            <p>
+                The Application is intended to help users manage their own exported chat files.
+            </p>
+            
+            <p>
+                You are responsible for protecting the privacy and confidentiality of any 
+                chat content you import or share using the Application.
+            </p>
+            
+            <p>
+                Do not use the Application to access, distribute, or share another person's 
+                private information without appropriate permission or legal authority.
+            </p>
+            
+            <p>
+                For information about how the Application handles information and third-party 
+                services, please refer to our Privacy Policy.
+            </p>
+            
+            <h2>4. No Affiliation with WhatsApp or Other Messaging Services</h2>
+            <p>
+                WD Export Chat Viewer is an independent application.
+            </p>
+            
+            <p>
+                The Application is <strong>not affiliated with, endorsed by, sponsored by, 
+                or connected with WhatsApp, Meta Platforms, Inc., or any other third-party 
+                messaging service</strong>.
+            </p>
+            
+            <p>
+                "WhatsApp" and other third-party names, logos, and trademarks belong to 
+                their respective owners.
+            </p>
+            
+            <p>
+                The Application is intended only for viewing and managing exported files 
+                provided by the user. It does not provide access to live chats or private 
+                accounts belonging to third parties.
+            </p>
+            
+            <h2>5. Copying and Sharing Content</h2>
+            <p>
+                The Application may allow you to copy and share messages or other content 
+                from imported files.
+            </p>
+            
+            <p>
+                You are solely responsible for how you use, copy, distribute, publish, or 
+                share such content.
+            </p>
+            
+            <p>You must not use the Application to:</p>
+            <ul>
+                <li>Violate another person's privacy</li>
+                <li>Infringe copyright or other intellectual property rights</li>
+                <li>Violate confidentiality obligations</li>
+                <li>Distribute unlawful content</li>
+                <li>Otherwise violate applicable laws or regulations</li>
+            </ul>
+            
+            <p>
+                The Service Provider is not responsible for the way users reuse, distribute, 
+                or share content.
+            </p>
+            
+            <h2>6. Backup and Restore</h2>
+            <p>
+                The Application may provide backup and restore functionality for supported 
+                application data or user content.
+            </p>
+            
+            <p>
+                Users are responsible for maintaining their own backups of important files 
+                and information.
+            </p>
+            
+            <p>
+                Although reasonable efforts are made to provide reliable backup and restore 
+                functionality, the Service Provider does not guarantee that every backup or 
+                restore operation will always be successful.
+            </p>
+            
+            <p>
+                For important data, users should maintain an independent backup.
+            </p>
+            
+            <h2>7. Advertisements</h2>
+            <p>
+                The Application may display advertisements provided by third-party advertising 
+                services, including <strong>Google AdMob</strong>.
+            </p>
+            
+            <p>
+                Advertisements may include different formats, such as banner, interstitial, 
+                rewarded, or other supported advertising formats, depending on the Application 
+                version and configuration.
+            </p>
+            
+            <p>The content and availability of advertisements may vary.</p>
+            
+            <p>
+                The Service Provider does not control the content, availability, or policies 
+                of third-party advertising services.
+            </p>
+            
+            <h2>8. Third-Party Services</h2>
+            <p>
+                The Application may use third-party services, including Google Play services 
+                and advertising services.
+            </p>
+            
+            <p>
+                Your use of third-party services may be subject to the respective terms and 
+                privacy policies of those providers.
+            </p>
+            
+            <p>
+                The Service Provider does not control and is not responsible for the policies, 
+                availability, content, or practices of third-party services.
+            </p>
+            
+            <h2>9. Acceptable Use</h2>
+            <p>You agree to use the Application only for lawful purposes.</p>
+            
+            <p>You must not:</p>
+            <ul>
+                <li>Use the Application to violate the rights or privacy of others</li>
+                <li>Use the Application to distribute unlawful or harmful content</li>
+                <li>Infringe copyrights, trademarks, or other intellectual property rights</li>
+                <li>Attempt to interfere with or disrupt the normal operation of the Application</li>
+                <li>Attempt to exploit security vulnerabilities or software bugs</li>
+                <li>Modify, tamper with, or misuse the Application</li>
+                <li>Use the Application for unlawful activities</li>
+            </ul>
+            
+            <p>
+                The Service Provider may take reasonable steps to protect the Application 
+                and its users from misuse.
+            </p>
+            
+            <h2>10. Application Availability and Compatibility</h2>
+            <p>
+                The Application is provided on an <strong>"AS IS"</strong> and 
+                <strong>"AS AVAILABLE"</strong> basis to the extent permitted by applicable law.
+            </p>
+            
+            <p>
+                We aim to provide a stable and useful application, but we do not guarantee 
+                that the Application will always operate without interruptions, errors, or 
+                compatibility issues.
+            </p>
+            
+            <p>The Application may be affected by:</p>
+            <ul>
+                <li>Device hardware or performance</li>
+                <li>Operating system changes</li>
+                <li>File format limitations</li>
+                <li>Device storage limitations</li>
+                <li>Software bugs or errors</li>
+                <li>Changes to third-party services</li>
+                <li>Application updates or system updates</li>
+            </ul>
+            
+            <p>
+                The Service Provider may modify, update, improve, suspend, or discontinue 
+                features when necessary.
+            </p>
+            
+            <h2>11. Data Loss and Backup Responsibility</h2>
+            <p>
+                Users are responsible for maintaining appropriate backups of important 
+                files and data.
+            </p>
+            
+            <p>
+                The Service Provider is not responsible for loss, corruption, deletion, or 
+                unavailability of user files or content resulting from device problems, 
+                operating system issues, software errors, user actions, failed backup or 
+                restore operations, or other circumstances beyond reasonable control.
+            </p>
+            
+            <h2>12. Intellectual Property</h2>
+            <p>
+                The Application, including its software, user interface, design, graphics, 
+                branding, and original content, is owned by or licensed to the Service 
+                Provider and is protected by applicable intellectual property laws.
+            </p>
+            
+            <p>
+                You may not copy, reproduce, modify, distribute, sell, rent, sublicense, 
+                or reverse engineer the Application except where such activity is expressly 
+                permitted by applicable law.
+            </p>
+            
+            <p>
+                Your imported files and their contents remain the responsibility of their 
+                respective owners.
+            </p>
+            
+            <h2>13. Updates</h2>
+            <p>The Service Provider may release updates to improve:</p>
+            <ul>
+                <li>Security</li>
+                <li>Performance</li>
+                <li>Stability</li>
+                <li>Compatibility</li>
+                <li>User experience</li>
+                <li>Features and functionality</li>
+            </ul>
+            
+            <p>
+                Some older versions of the Application may stop receiving support or may 
+                not be fully compatible with newer versions.
+            </p>
+            
+            <h2>14. Changes to These Terms</h2>
+            <p>
+                These Terms & Conditions may be updated from time to time.
+            </p>
+            
+            <p>
+                When changes are made, the updated version will be published on this page 
+                and the "Last updated" date will be changed.
+            </p>
+            
+            <p>
+                Your continued use of the Application after updated Terms become effective 
+                may constitute acceptance of the revised Terms.
+            </p>
+            
+            <h2>15. Limitation of Liability</h2>
+            <p>
+                To the extent permitted by applicable law, the Service Provider is not 
+                responsible for losses or damages arising from or related to:
+            </p>
+            <ul>
+                <li>Loss or corruption of user files</li>
+                <li>Incorrect or incomplete imported content</li>
+                <li>Device or storage problems</li>
+                <li>Software errors or bugs</li>
+                <li>Backup or restore failures</li>
+                <li>Incompatibility with particular files or devices</li>
+                <li>Third-party services or advertisements</li>
+                <li>Misuse or unauthorized sharing of imported content</li>
+            </ul>
+            
+            <p>
+                Nothing in these Terms excludes or limits any liability or rights that 
+                cannot be excluded or limited under applicable law.
+            </p>
+            
+            <h2>16. Contact Us</h2>
+            <p>
+                If you have any questions, concerns, or feedback regarding these Terms & 
+                Conditions, please contact us at:
+            </p>
+            
+            <div class="contact-card">
+                <div class="contact-icon">💬</div>
+                <h3>Have Questions?</h3>
+                <p>If you have any questions about these Terms & Conditions, feel free to reach out.</p>
+                
+                <a href="mailto:sangeetha1990a@gmail.com" class="email-card">
+                    <div class="email-icon-sm">📧</div>
+                    <div class="email-text">
+                        <div class="email-label-sm">Email us</div>
+                        <div class="email-address-sm">sangeetha1990a@gmail.com</div>
+                    </div>
+                    <div class="email-arrow-sm">→</div>
+                </a>
+            </div>
+            
+            <p style="margin-top: 40px; text-align: center; color: #64748B; font-size: 13px; font-style: italic;">
+                WD Export Chat Viewer is designed to help users view, search, organize, and 
+                manage their exported chat files.
+            </p>
+            
+            <p style="text-align: center; color: #64748B; font-size: 13px; font-style: italic;">
+                Users are responsible for the content they import, copy, share, and use 
+                through the Application.
+            </p>
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://sangeetha1990a.github.io/lipiapps/">Home</a>
+            <a href="privacy-wd-viewer.html">Privacy</a>
+            <a href="terms-wd-viewer.html">Terms</a>
+            <a href="mailto:sangeetha1990a@gmail.com">Contact</a>
+        </div>
+        <p>© 2026 LiPi Apps. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
