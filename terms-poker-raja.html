@@ -1,336 +1,937 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Service — PokerRaja</title>
-<style>
-* { box-sizing: border-box; }
-body {
-  margin: 0; padding: 0;
-  background: #0a0a0a; color: #e8e8e8;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px; line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-}
-.container { max-width: 780px; margin: 0 auto; padding: 32px 24px 64px; }
-.breadcrumb {
-  font-size: 13px; color: #888; margin-bottom: 24px;
-  text-transform: uppercase; letter-spacing: 1.5px;
-}
-.breadcrumb a { color: #888; text-decoration: none; }
-.breadcrumb a:hover { color: #d4af37; }
-.product-badge {
-  display: inline-block; padding: 4px 12px;
-  background: rgba(212, 175, 55, 0.12); color: #d4af37;
-  border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 4px;
-  font-size: 12px; font-weight: 600; letter-spacing: 1px;
-  margin-bottom: 12px; text-transform: uppercase;
-}
-h1 {
-  color: #d4af37; font-size: 34px; font-weight: 700;
-  margin: 8px 0 6px; letter-spacing: -0.5px;
-}
-.last-updated { color: #888; font-size: 14px; margin-bottom: 28px; }
-h2 {
-  color: #d4af37; font-size: 21px; font-weight: 600;
-  margin: 40px 0 12px; padding-bottom: 8px;
-  border-bottom: 1px solid #2a2a2a;
-}
-h3 { color: #d4af37; font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
-p { margin: 12px 0; }
-ul, ol { padding-left: 24px; margin: 12px 0; }
-li { margin: 6px 0; }
-strong { color: #fff; font-weight: 600; }
-a { color: #d4af37; text-decoration: none; }
-a:hover { text-decoration: underline; }
-.summary {
-  background: #111; border-left: 4px solid #d4af37;
-  padding: 18px 22px; margin: 28px 0; border-radius: 4px;
-  color: #d0d0d0; font-size: 15px;
-}
-.summary strong { color: #d4af37; }
-.warning {
-  background: #1a0a0a; border-left: 4px solid #e53935;
-  padding: 18px 22px; margin: 24px 0; border-radius: 4px;
-}
-.warning strong { color: #ff6b6b; }
-.contact {
-  background: #111; border: 1px solid #2a2a2a;
-  padding: 28px; margin: 48px 0 24px; border-radius: 10px;
-  text-align: center;
-}
-.contact h3 { color: #d4af37; margin: 0 0 8px; font-size: 19px; }
-.contact p { color: #aaa; margin: 8px 0; }
-.contact a { color: #d4af37; font-weight: 600; font-size: 17px; }
-.footer-nav {
-  margin-top: 32px; padding-top: 24px; border-top: 1px solid #2a2a2a;
-  text-align: center; color: #666; font-size: 14px;
-}
-.footer-nav a { color: #888; margin: 0 12px; }
-@media (max-width: 600px) {
-  .container { padding: 24px 16px 48px; }
-  h1 { font-size: 28px; }
-  h2 { font-size: 19px; }
-  body { font-size: 15px; }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — PokerRaja | LiPi Apps</title>
+    <meta name="description" content="Terms of Service for PokerRaja mobile poker application.">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0A0E17;
+            color: #E2E8F0;
+            line-height: 1.7;
+        }
+        
+        nav {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            padding: 16px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 14, 23, 0.9);
+            backdrop-filter: blur(20px);
+            z-index: 100;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #F5C542, #FF8A00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+        }
+        
+        .nav-links { display: flex; gap: 24px; list-style: none; }
+        .nav-links a {
+            color: #94A3B8;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover, .nav-links a.active { color: #F5C542; }
+        
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 60px 40px 80px;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        
+        .page-badge {
+            display: inline-block;
+            padding: 6px 18px;
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.25);
+            border-radius: 50px;
+            font-size: 11px;
+            color: #A78BFA;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        
+        .app-name {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(245, 197, 66, 0.08);
+            border: 1px solid rgba(245, 197, 66, 0.25);
+            border-radius: 50px;
+            font-size: 13px;
+            color: #F5C542;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        .page-header h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            margin-bottom: 12px;
+            color: #FFFFFF;
+        }
+        
+        .page-header h1 span {
+            background: linear-gradient(135deg, #F5C542, #FF8A00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .last-updated {
+            color: #64748B;
+            font-size: 14px;
+        }
+        
+        .content h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-top: 40px;
+            margin-bottom: 14px;
+            padding-left: 14px;
+            border-left: 3px solid #F5C542;
+            letter-spacing: -0.3px;
+        }
+        
+        .content h2:first-child { margin-top: 0; }
+        
+        .content h3 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #F5C542;
+            margin: 24px 0 10px;
+            letter-spacing: -0.2px;
+        }
+        
+        .content p {
+            color: #CBD5E1;
+            font-size: 15px;
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+        
+        .content ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        
+        .content ul li {
+            position: relative;
+            padding: 8px 0 8px 32px;
+            color: #CBD5E1;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        
+        .content ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(245, 197, 66, 0.12);
+            color: #F5C542;
+            border-radius: 50%;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        
+        .content a {
+            color: #F5C542;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(245, 197, 66, 0.3);
+            transition: border-color 0.3s;
+        }
+        
+        .content a:hover { border-bottom-color: #F5C542; }
+        
+        .content strong { color: #FFFFFF; font-weight: 700; }
+        
+        .info-box {
+            padding: 24px;
+            background: linear-gradient(135deg, #141B2B 0%, #0F172A 100%);
+            border: 1px solid rgba(139, 92, 246, 0.15);
+            border-left: 3px solid #A78BFA;
+            border-radius: 14px;
+            margin: 28px 0;
+        }
+        
+        .info-box p { margin: 0; color: #94A3B8; font-size: 14px; }
+        
+        .warning {
+            padding: 24px;
+            background: linear-gradient(135deg, rgba(229, 57, 53, 0.08) 0%, rgba(198, 40, 40, 0.04) 100%);
+            border: 1px solid rgba(229, 57, 53, 0.25);
+            border-left: 3px solid #E53935;
+            border-radius: 14px;
+            margin: 28px 0;
+        }
+        
+        .warning p { margin: 0; color: #FCA5A5; font-size: 14px; }
+        .warning strong { color: #FF6B6B; }
+        
+        .contact-card {
+            margin-top: 48px;
+            padding: 40px 32px;
+            background: linear-gradient(135deg, #141B2B 0%, #0F172A 100%);
+            border: 1.5px solid rgba(139, 92, 246, 0.2);
+            border-radius: 22px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #A78BFA, #8B5CF6);
+        }
+        
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #A78BFA, #8B5CF6);
+            font-size: 26px;
+            box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);
+        }
+        
+        .contact-card h3 {
+            color: #FFFFFF;
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        
+        .contact-card p {
+            color: #94A3B8;
+            margin-bottom: 24px;
+            font-size: 14px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .email-card {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 24px;
+            background: #0A0E17;
+            border: 1.5px solid rgba(139, 92, 246, 0.35);
+            border-radius: 14px;
+            text-decoration: none;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .email-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.15), transparent);
+            transition: left 0.6s;
+        }
+        
+        .email-card:hover::before { left: 100%; }
+        
+        .email-card:hover {
+            border-color: #A78BFA;
+            transform: translateY(-3px);
+            box-shadow: 0 14px 32px rgba(139, 92, 246, 0.25);
+        }
+        
+        .email-icon-sm {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #A78BFA, #8B5CF6);
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        
+        .email-text { text-align: left; }
+        
+        .email-label-sm {
+            font-size: 10px;
+            color: #64748B;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+        
+        .email-address-sm {
+            font-size: 15px;
+            font-weight: 700;
+            color: #FFFFFF;
+            letter-spacing: 0.2px;
+        }
+        
+        .email-arrow-sm {
+            color: #A78BFA;
+            font-size: 18px;
+            transition: transform 0.3s;
+            margin-left: 4px;
+        }
+        
+        .email-card:hover .email-arrow-sm { transform: translateX(4px); }
+        
+        .address-block {
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            color: #94A3B8;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+        
+        .address-block strong {
+            color: #F5C542;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 4px;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #64748B;
+            text-decoration: none;
+            font-size: 13px;
+            margin-bottom: 24px;
+            transition: color 0.3s;
+        }
+        
+        .back-link:hover { color: #F5C542; }
+        
+        .footer-note {
+            margin-top: 48px;
+            padding: 32px 24px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(245, 197, 66, 0.06) 0%, rgba(255, 138, 0, 0.03) 100%);
+            border: 1px solid rgba(245, 197, 66, 0.15);
+            border-radius: 16px;
+        }
+        
+        .footer-note p {
+            color: #F5C542;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .footer-note p:last-child {
+            color: #94A3B8;
+            font-size: 13px;
+            font-weight: 500;
+            font-style: italic;
+            margin-bottom: 0;
+        }
+        
+        footer {
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            background: #0A0E17;
+        }
+        .footer-links {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-bottom: 18px;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: #64748B;
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover { color: #F5C542; }
+        footer p { color: #475569; font-size: 13px; }
+        
+        @media (max-width: 768px) {
+            nav { padding: 14px 20px; }
+            .nav-links { gap: 16px; }
+            .nav-links a { font-size: 13px; }
+            .container { padding: 40px 20px 60px; }
+            .email-card { padding: 14px 18px; }
+            .email-address-sm { font-size: 13px; }
+        }
+    </style>
 </head>
 <body>
-<div class="container">
 
-<div class="breadcrumb">
-  <a href="/lipiapps/">Legal</a> &nbsp;→&nbsp; PokerRaja
-</div>
+    <nav>
+        <a href="https://sangeetha1990a.github.io/lipiapps/" class="logo">LiPi Apps</a>
+        <ul class="nav-links">
+            <li><a href="https://sangeetha1990a.github.io/lipiapps/">Home</a></li>
+            <li><a href="privacy-poker-raja.html">Privacy</a></li>
+            <li><a href="terms-poker-raja.html" class="active">Terms</a></li>
+        </ul>
+    </nav>
 
-<div class="product-badge">PokerRaja · Texas Hold'em &amp; Omaha Hi-Lo</div>
+    <div class="container">
+        
+        <a href="https://sangeetha1990a.github.io/lipiapps/" class="back-link">← Back to Home</a>
+        
+        <div class="page-header">
+            <div class="page-badge">Legal</div>
+            <div class="app-name">PokerRaja · Texas Hold'em &amp; Omaha Hi-Lo</div>
+            <div class="app-card">
+                <img src="poker-raja-icon.png" alt="PokerRaja" loading="lazy">
+            </div>
+            <h1>Terms of <span>Service</span></h1>
+            <p class="last-updated">Last updated: November 5, 2026</p>
+        </div>
+        
+        <div class="content">
+            
+            <div class="info-box">
+                <p>
+                    <strong style="color: #A78BFA;">Summary:</strong> Welcome to PokerRaja. 
+                    These Terms of Service govern your use of the PokerRaja mobile application. 
+                    By downloading, installing, or using PokerRaja, you agree to these Terms 
+                    of Service. If you do not agree, please do not use the application.
+                </p>
+            </div>
+            
+            <div class="warning">
+                <p>
+                    <strong>No Real-Money Gambling:</strong> PokerRaja is designed solely 
+                    for casual entertainment. No betting, no wagering, no cash prizes. 
+                    Virtual chips have no monetary value and cannot be cashed out.
+                </p>
+            </div>
+            
+            <h2>1. Eligibility</h2>
+            <p>
+                You must be at least <strong>18 years of age</strong> to use PokerRaja. 
+                By using the App, you represent and warrant that you are 18 or older and 
+                legally capable of entering into a binding contract under the Indian 
+                Contract Act, 1872.
+            </p>
+            <p>
+                If you do not meet this age requirement, you must not download, access, 
+                or use the App.
+            </p>
+            
+            <h2>2. About PokerRaja</h2>
+            <p>
+                PokerRaja is a casual poker game designed for entertainment with AI 
+                opponents and friends.
+            </p>
+            <p>
+                The app supports Texas Hold'em and Omaha Hi-Lo poker variants and offers 
+                both single-player gameplay against AI opponents and local multiplayer 
+                gameplay using a WiFi network or mobile hotspot.
+            </p>
+            <p>PokerRaja includes:</p>
+            <ul>
+                <li>Texas Hold'em poker</li>
+                <li>Omaha Hi-Lo poker</li>
+                <li>Cash game mode against AI opponents</li>
+                <li>Tournament mode against AI opponents</li>
+                <li>Local WiFi multiplayer (up to 9 players)</li>
+                <li>Virtual chip bankroll, hand history, and statistics</li>
+                <li>Achievements and progress tracking</li>
+                <li>Daily rewards, rewarded-ad chip bonuses, and a lucky reward wheel</li>
+            </ul>
+            <p>
+                Game rules and available features may vary depending on the selected game 
+                mode or app version.
+            </p>
+            
+            <h2>3. Entertainment Only — No Real-Money Gambling</h2>
+            <div class="warning">
+                <p><strong>PokerRaja does not offer real-money gambling.</strong></p>
+            </div>
+            <p>PokerRaja is designed solely for casual entertainment.</p>
+            <p>PokerRaja does not offer or facilitate:</p>
+            <ul>
+                <li>Real-money gambling</li>
+                <li>Betting or wagering</li>
+                <li>Cash deposits</li>
+                <li>Cash withdrawals</li>
+                <li>Cash prizes</li>
+                <li>Real-money winnings</li>
+                <li>Redemption of virtual chips for money or real-world value</li>
+                <li>Peer-to-peer chip transfers between users</li>
+            </ul>
+            <p>
+                No money is wagered on the outcome of any game played in PokerRaja.
+            </p>
+            <p>
+                Virtual chips, scores, points, and other gameplay results are used only 
+                within the game and have no real-world monetary value.
+            </p>
+            
+            <h2>4. Virtual Chips and Bankroll</h2>
+            <p>
+                PokerRaja uses virtual chips as the in-game currency. Virtual chips may be 
+                earned through gameplay, daily rewards, rewarded advertisements, wheel spins, 
+                or purchased through Google Play in-app purchases.
+            </p>
+            <p><strong>Virtual chips:</strong></p>
+            <ul>
+                <li>Cannot be exchanged for real money or cash prizes</li>
+                <li>Cannot be cashed out, sold, or traded</li>
+                <li>Cannot be transferred to another user</li>
+                <li>Cannot be redeemed for real-world goods or services</li>
+                <li>Hold no monetary value in any currency</li>
+                <li>Are licensed to you for in-game use only, not owned by you</li>
+                <li>May be lost through gameplay or through technical events as described in these Terms</li>
+            </ul>
+            <p>
+                Virtual chips are intended for personal, non-commercial entertainment use only.
+            </p>
+            
+            <h2>5. Game Modes</h2>
+            <p>PokerRaja offers different poker game modes:</p>
+            
+            <h3>5.1 Cash Game (Single Player)</h3>
+            <p>
+                Play Texas Hold'em or Omaha Hi-Lo against AI opponents. Virtual chips are 
+                won or lost against AI opponents. Blind levels and buy-in amounts vary by 
+                tier (Rookie, Casual, Regular, Pro, Legend).
+            </p>
+            
+            <h3>5.2 Tournament Mode</h3>
+            <p>
+                Compete in single-table or multi-table tournaments against AI opponents. 
+                Entry fees and prize structures use virtual chips only. All prize pools are 
+                virtual and have no real-world value.
+            </p>
+            
+            <h3>5.3 Multiplayer Mode</h3>
+            <p>
+                Host or join local multiplayer games against friends on the same WiFi network 
+                or mobile hotspot. Local multiplayer does not require an internet connection 
+                for gameplay itself.
+            </p>
+            <p>
+                Rules, features, and chip mechanics may vary by mode. Players are responsible 
+                for understanding the rules of the game mode they select.
+            </p>
+            
+            <h2>6. Local Multiplayer</h2>
+            <p>
+                PokerRaja allows players to play together using a local WiFi network or 
+                mobile hotspot.
+            </p>
+            <p>
+                An internet connection is not required for local multiplayer gameplay. 
+                However, certain features such as advertisements, in-app purchases, updates, 
+                or other services may require an internet connection.
+            </p>
+            <p>
+                Players are responsible for ensuring that their devices and local network 
+                connections are suitable for multiplayer gameplay.
+            </p>
+            <p>
+                Network interruptions, device limitations, or connection problems may affect 
+                gameplay. Virtual chips committed to a multiplayer pot may be lost due to such 
+                interruptions, and the Service Provider is not responsible for such losses.
+            </p>
+            
+            <h2>7. AI Opponents</h2>
+            <p>
+                PokerRaja uses artificial-intelligence opponents for single-player cash games 
+                and tournaments.
+            </p>
+            <p>
+                AI opponents simulate poker play against the user. AI opponents do not provide 
+                financial advice, betting advice, or any guarantee of game outcomes. AI behavior 
+                may be tuned across the game's economy, tiers, and phases for reasonable 
+                difficulty and balance.
+            </p>
+            <p>
+                AI opponents are not human players. Users should not rely on AI behavior as 
+                representative of real-world poker strategy.
+            </p>
+            
+            <h2>8. Tournaments</h2>
+            <p>PokerRaja offers tournament gameplay against AI opponents.</p>
+            <p>
+                All tournaments are play-money events. Entry fees are virtual chips. Prize 
+                pools are virtual chips. No real-money prizes are awarded under any circumstance.
+            </p>
+            <p>
+                Tournament rules, structures, blind schedules, and prize distributions may 
+                vary by tournament variant. Tournament variants may be adjusted, added, or 
+                discontinued at the Service Provider's discretion.
+            </p>
+            
+            <h2>9. Fair Play</h2>
+            <p>
+                Users must use the app responsibly and must not intentionally disrupt, 
+                manipulate, exploit, or interfere with the normal operation of the game.
+            </p>
+            <p>Users must not:</p>
+            <ul>
+                <li>Exploit software bugs or vulnerabilities</li>
+                <li>Interfere with other players' devices or connections</li>
+                <li>Manipulate game data or app storage to gain unfair virtual chips</li>
+                <li>Modify the application to gain an unfair advantage</li>
+                <li>Use emulators, VPNs, or multi-account techniques to exploit first-purchase offers</li>
+                <li>Use the app for unlawful purposes</li>
+            </ul>
+            <p>
+                We may update the app to improve security, stability, gameplay, or performance. 
+                The Service Provider reserves the right to restrict access to features or take 
+                reasonable corrective action if fair-play violations are detected.
+            </p>
+            
+            <h2>10. Multiplayer Communication</h2>
+            <p>
+                During multiplayer games, the app exchanges game-related information between 
+                connected devices to provide gameplay functionality.
+            </p>
+            <p>
+                Players are responsible for their own behavior when using multiplayer features, 
+                including in-game chat where available.
+            </p>
+            <p>
+                Users must not use in-game communication to harass, threaten, abuse, or 
+                intentionally disrupt other players.
+            </p>
+            
+            <h2>11. Advertisements</h2>
+            <p>PokerRaja may display advertisements. Advertisements may include:</p>
+            <ul>
+                <li>Banner advertisements</li>
+                <li>Interstitial advertisements</li>
+                <li>Rewarded advertisements</li>
+                <li>App open advertisements</li>
+            </ul>
+            <p>
+                Rewarded advertisements may be watched voluntarily by users to earn virtual 
+                chips within the Application. Rewarded advertisements are optional. Users may 
+                disable all advertisements permanently by purchasing VIP Premium.
+            </p>
+            <p>
+                The availability and frequency of advertisements may vary. Advertisements are 
+                provided by third-party advertising services.
+            </p>
+            
+            <h2>12. In-App Purchases — Chip Packs</h2>
+            <p>
+                PokerRaja offers virtual chip packs as consumable in-app purchases through 
+                Google Play.
+            </p>
+            <p>
+                Chip packs deliver virtual chips to your in-game bankroll upon Google Play's 
+                confirmation of your purchase. In the rare event that the Application terminates 
+                unexpectedly between Google Play's confirmation and chip delivery, PokerRaja's 
+                recovery system attempts to credit the purchase on your next launch. Chip packs 
+                are consumable — they may be purchased repeatedly.
+            </p>
+            <div class="warning">
+                <p>
+                    <strong>Consumable chip purchases are non-refundable once chips have been 
+                    delivered</strong>, except where required by Google Play's refund policy or 
+                    applicable law. Virtual chips that have been spent in gameplay cannot be 
+                    recovered under any circumstance.
+                </p>
+            </div>
+            <p>
+                Prices for chip packs are set by Google Play and may vary by country, region, 
+                currency, or applicable taxes.
+            </p>
+            
+            <h2>13. VIP Premium</h2>
+            <p>
+                PokerRaja offers an optional VIP Premium upgrade as a one-time, non-consumable 
+                in-app purchase.
+            </p>
+            <p>
+                VIP Premium is optional and is not required to download or use the basic 
+                features of the app.
+            </p>
+            <p>VIP Premium benefits include:</p>
+            <ul>
+                <li>Ad-free gameplay (banner and interstitial advertisements removed)</li>
+                <li>Doubled rewarded-advertisement chip rewards (2× standard rewarded-ad amount)</li>
+                <li>Free entry to any tournament with a buy-in at or below the threshold specified in the app</li>
+                <li>Unlimited WiFi multiplayer access without watching rewarded advertisements</li>
+            </ul>
+            <p>
+                VIP Premium is a lifetime unlock. It can be restored on reinstall through the 
+                "Restore Purchases" function using the same Google account used for the original 
+                purchase.
+            </p>
+            <p>
+                VIP Premium benefits may be updated or improved in future versions. New benefits 
+                may be added; existing benefits will not be removed without a reasonable notice.
+            </p>
+            
+            <h2>14. Payments and Refunds</h2>
+            <p>
+                In-app purchases made through Google Play are processed according to applicable 
+                Google Play terms and policies.
+            </p>
+            <p>
+                Prices may vary depending on the user's country, region, currency, applicable 
+                taxes, or Google Play pricing.
+            </p>
+            <h3>14.1 Refund Policy</h3>
+            <ul>
+                <li><strong>VIP Premium (non-consumable)</strong> — Refund requests are governed by Google Play's refund policy. Refunds may be available within the timeframe permitted by Google Play.</li>
+                <li><strong>Chip Packs (consumable)</strong> — Once virtual chips have been delivered to your in-game bankroll, purchases are non-refundable. Refunds for chips that have been spent in gameplay are not available.</li>
+                <li><strong>Unauthorized transactions</strong> — If you believe a purchase was made without your authorization, please contact Google Play support directly in accordance with their policy.</li>
+            </ul>
+            <p>
+                All refund decisions are ultimately made by Google Play in accordance with 
+                their refund policy. The Service Provider does not process refunds directly.
+            </p>
+            
+            <h2>15. Welcome Special</h2>
+            <p>
+                PokerRaja may offer a first-purchase "Welcome Special" promotion. This is a 
+                discounted virtual chip pack available only to users who have not made any 
+                prior in-app purchase.
+            </p>
+            <p>
+                Welcome Special eligibility is verified by Google Play's server-side purchase 
+                tracking. Attempting to circumvent first-purchase restrictions (for example, 
+                through multiple Google accounts, factory resets, VPN use, or emulators) may 
+                result in restriction of access to the promotion or other corrective action.
+            </p>
+            
+            <h2>16. Technical Failures and Virtual Chip Loss</h2>
+            <div class="warning">
+                <p>
+                    <strong>The Service Provider is not responsible for virtual chip losses 
+                    caused by technical failures outside its reasonable control.</strong>
+                </p>
+            </div>
+            <p>
+                Virtual chips, hand history, tournament progress, and other in-game data may 
+                be lost due to events including, but not limited to:
+            </p>
+            <ul>
+                <li>Application crashes, freezes, or forced closures</li>
+                <li>Device failure, hardware malfunction, or storage corruption</li>
+                <li>Operating system updates, reinstalls, or factory resets</li>
+                <li>Uninstallation or clearing of application data</li>
+                <li>Network interruptions during multiplayer sessions</li>
+                <li>Power loss or battery depletion during gameplay</li>
+                <li>Interruption of an in-app purchase transaction before completion</li>
+                <li>Device storage becoming full during save operations</li>
+            </ul>
+            <p>
+                The Service Provider is not responsible for virtual chip losses or game progress 
+                losses resulting from such events.
+            </p>
+            <p>
+                Where a technical fault is caused by a demonstrable defect in the Application 
+                itself (not user error, device malfunction, or third-party systems), the Service 
+                Provider may, at its sole discretion, take reasonable steps to restore affected 
+                virtual chips. Any such restoration is not guaranteed and does not create an 
+                ongoing obligation.
+            </p>
+            <p>
+                For in-app purchase transactions that were completed on Google Play but not 
+                delivered due to a technical failure, PokerRaja includes recovery mechanisms 
+                that attempt to credit the purchase on the next application launch. If a 
+                completed purchase has not been credited after a reasonable period, please 
+                contact the Service Provider with your Google Play order number using the 
+                contact details below.
+            </p>
+            
+            <h2>17. No Guarantee of Uninterrupted Service</h2>
+            <p>
+                We aim to provide a stable and enjoyable experience. However, we cannot 
+                guarantee that the app will always operate without interruptions or errors.
+            </p>
+            <p>The app may be affected by:</p>
+            <ul>
+                <li>Device compatibility</li>
+                <li>WiFi or hotspot connectivity</li>
+                <li>Network interruptions</li>
+                <li>Operating system updates</li>
+                <li>Device performance</li>
+                <li>Software errors or bugs</li>
+            </ul>
+            <p>We may update, modify, improve, or discontinue features when necessary.</p>
+            
+            <h2>18. Updates</h2>
+            <p>We may release updates to improve:</p>
+            <ul>
+                <li>Gameplay</li>
+                <li>Security</li>
+                <li>Performance</li>
+                <li>Stability</li>
+                <li>Compatibility</li>
+                <li>Features</li>
+            </ul>
+            <p>
+                For the best multiplayer experience, players should use the latest compatible 
+                version of PokerRaja. Different app versions may not always be fully compatible 
+                during multiplayer gameplay.
+            </p>
+            
+            <h2>19. Intellectual Property</h2>
+            <p>
+                PokerRaja, including its application design, graphics, software, features, and 
+                other original content, is protected by applicable intellectual property laws.
+            </p>
+            <p>
+                Users may not copy, reproduce, modify, distribute, or reverse engineer the 
+                application except where permitted by applicable law.
+            </p>
+            
+            <h2>20. Country and Jurisdictional Restrictions</h2>
+            <p>
+                Poker-themed applications may be subject to specific legal restrictions in 
+                certain countries and regions, even when no real-money gambling is involved.
+            </p>
+            <p>
+                PokerRaja is intended for entertainment purposes only. Users are responsible 
+                for understanding and complying with the laws of their own country or region 
+                regarding the download and use of poker-themed applications.
+            </p>
+            <p>
+                The Service Provider makes no representation that PokerRaja is appropriate or 
+                legally available in every jurisdiction. If the use of poker-themed applications 
+                is restricted or prohibited in your jurisdiction, you should not download or 
+                use PokerRaja.
+            </p>
+            
+            <h2>21. Limitation of Liability</h2>
+            <p>PokerRaja is provided for entertainment purposes.</p>
+            <p>
+                To the extent permitted by applicable law, we are not responsible for losses 
+                or damages resulting from:
+            </p>
+            <ul>
+                <li>Network interruptions</li>
+                <li>Device problems or hardware failures</li>
+                <li>Loss of virtual chips, game progress, or in-game data</li>
+                <li>Multiplayer connection problems</li>
+                <li>Software errors or bugs</li>
+                <li>Third-party advertisements or services</li>
+                <li>User's failure to comply with local laws</li>
+            </ul>
+            <p>
+                Nothing in these Terms limits any rights that cannot be excluded under 
+                applicable law.
+            </p>
+            
+            <h2>22. Governing Law &amp; Jurisdiction</h2>
+            <p>
+                These Terms of Service are governed by the laws of <strong>India</strong>. 
+                Any disputes arising out of or in connection with these Terms shall be 
+                subject to the exclusive jurisdiction of the courts of 
+                <strong>Madurai, Tamil Nadu, India</strong>.
+            </p>
+            
+            <h2>23. Changes to These Terms</h2>
+            <p>We may update these Terms of Service from time to time.</p>
+            <p>
+                Any updated version may be published within the app or on our website. 
+                Continued use of PokerRaja after changes become effective may constitute 
+                acceptance of the updated Terms.
+            </p>
+            
+            <h2>24. Contact</h2>
+            <p>
+                If you have questions about these Terms of Service, please contact us through 
+                the contact information below or through the PokerRaja app.
+            </p>
+            
+            <div class="contact-card">
+                <div class="contact-icon">💬</div>
+                <h3>Have Questions?</h3>
+                <p>If you have any questions about these Terms of Service, feel free to reach out.</p>
+                
+                <a href="mailto:sangeetha1990a@gmail.com" class="email-card">
+                    <div class="email-icon-sm">📧</div>
+                    <div class="email-text">
+                        <div class="email-label-sm">Email us</div>
+                        <div class="email-address-sm">sangeetha1990a@gmail.com</div>
+                    </div>
+                    <div class="email-arrow-sm">→</div>
+                </a>
+                
+                <div class="address-block">
+                    <strong>Developer / Service Provider</strong>
+                    Lipi-Apps (Sangeetha)<br>
+                    1/395 Poriyalar Nagar 1st Street,<br>
+                    Thiruppalai, Madurai,<br>
+                    Tamil Nadu, India – 625014
+                </div>
+            </div>
+            
+            <div class="footer-note">
+                <p>PokerRaja is made for casual poker fun with AI opponents and friends.</p>
+                <p>No real-money gambling. No betting. No cash prizes. Virtual chips only.</p>
+                <p>PokerRaja — Your Table. Your Rules. Your Game.</p>
+            </div>
+            
+        </div>
+    </div>
 
-<h1>Terms of Service</h1>
-<p class="last-updated">Last updated: November 5, 2026</p>
+    <footer>
+        <div class="footer-links">
+            <a href="https://sangeetha1990a.github.io/lipiapps/">Home</a>
+            <a href="privacy-poker-raja.html">Privacy</a>
+            <a href="terms-poker-raja.html">Terms</a>
+            <a href="mailto:sangeetha1990a@gmail.com">Contact</a>
+        </div>
+        <p>© 2026 LiPi Apps. All rights reserved.</p>
+    </footer>
 
-<div class="summary">
-Welcome to PokerRaja. These Terms of Service govern your use of the PokerRaja mobile application. By downloading, installing, or using PokerRaja, you agree to these Terms of Service. If you do not agree, please do not use the application.
-</div>
-
-<div class="warning">
-<strong>No Real-Money Gambling:</strong> PokerRaja is designed solely for casual entertainment. No betting, no wagering, no cash prizes. Virtual chips have no monetary value and cannot be cashed out.
-</div>
-
-<h2>1. Eligibility</h2>
-<p>You must be at least <strong>18 years of age</strong> to use PokerRaja. By using the App, you represent and warrant that you are 18 or older and legally capable of entering into a binding contract under the Indian Contract Act, 1872.</p>
-<p>If you do not meet this age requirement, you must not download, access, or use the App.</p>
-
-<h2>2. About PokerRaja</h2>
-<p>PokerRaja is a casual poker game designed for entertainment with AI opponents and friends.</p>
-<p>The app supports Texas Hold'em and Omaha Hi-Lo poker variants and offers both single-player gameplay against AI opponents and local multiplayer gameplay using a WiFi network or mobile hotspot.</p>
-<p>PokerRaja includes:</p>
-<ul>
-<li>Texas Hold'em poker</li>
-<li>Omaha Hi-Lo poker</li>
-<li>Cash game mode against AI opponents</li>
-<li>Tournament mode against AI opponents</li>
-<li>Local WiFi multiplayer (up to 9 players)</li>
-<li>Virtual chip bankroll, hand history, and statistics</li>
-<li>Achievements and progress tracking</li>
-<li>Daily rewards, rewarded-ad chip bonuses, and a lucky reward wheel</li>
-</ul>
-<p>Game rules and available features may vary depending on the selected game mode or app version.</p>
-
-<h2>3. Entertainment Only — No Real-Money Gambling</h2>
-<div class="warning">
-<strong>PokerRaja does not offer real-money gambling.</strong>
-</div>
-<p>PokerRaja is designed solely for casual entertainment.</p>
-<p>PokerRaja does not offer or facilitate:</p>
-<ul>
-<li>Real-money gambling</li>
-<li>Betting or wagering</li>
-<li>Cash deposits</li>
-<li>Cash withdrawals</li>
-<li>Cash prizes</li>
-<li>Real-money winnings</li>
-<li>Redemption of virtual chips for money or real-world value</li>
-<li>Peer-to-peer chip transfers between users</li>
-</ul>
-<p>No money is wagered on the outcome of any game played in PokerRaja.</p>
-<p>Virtual chips, scores, points, and other gameplay results are used only within the game and have no real-world monetary value.</p>
-
-<h2>4. Virtual Chips and Bankroll</h2>
-<p>PokerRaja uses virtual chips as the in-game currency. Virtual chips may be earned through gameplay, daily rewards, rewarded advertisements, wheel spins, or purchased through Google Play in-app purchases.</p>
-<p><strong>Virtual chips:</strong></p>
-<ul>
-<li>Cannot be exchanged for real money or cash prizes</li>
-<li>Cannot be cashed out, sold, or traded</li>
-<li>Cannot be transferred to another user</li>
-<li>Cannot be redeemed for real-world goods or services</li>
-<li>Hold no monetary value in any currency</li>
-<li>Are licensed to you for in-game use only, not owned by you</li>
-<li>May be lost through gameplay or through technical events as described in these Terms</li>
-</ul>
-<p>Virtual chips are intended for personal, non-commercial entertainment use only.</p>
-
-<h2>5. Game Modes</h2>
-<p>PokerRaja offers different poker game modes:</p>
-<h3>5.1 Cash Game (Single Player)</h3>
-<p>Play Texas Hold'em or Omaha Hi-Lo against AI opponents. Virtual chips are won or lost against AI opponents. Blind levels and buy-in amounts vary by tier (Rookie, Casual, Regular, Pro, Legend).</p>
-<h3>5.2 Tournament Mode</h3>
-<p>Compete in single-table or multi-table tournaments against AI opponents. Entry fees and prize structures use virtual chips only. All prize pools are virtual and have no real-world value.</p>
-<h3>5.3 Multiplayer Mode</h3>
-<p>Host or join local multiplayer games against friends on the same WiFi network or mobile hotspot. Local multiplayer does not require an internet connection for gameplay itself.</p>
-<p>Rules, features, and chip mechanics may vary by mode. Players are responsible for understanding the rules of the game mode they select.</p>
-
-<h2>6. Local Multiplayer</h2>
-<p>PokerRaja allows players to play together using a local WiFi network or mobile hotspot.</p>
-<p>An internet connection is not required for local multiplayer gameplay. However, certain features such as advertisements, in-app purchases, updates, or other services may require an internet connection.</p>
-<p>Players are responsible for ensuring that their devices and local network connections are suitable for multiplayer gameplay.</p>
-<p>Network interruptions, device limitations, or connection problems may affect gameplay. Virtual chips committed to a multiplayer pot may be lost due to such interruptions, and the Service Provider is not responsible for such losses.</p>
-
-<h2>7. AI Opponents</h2>
-<p>PokerRaja uses artificial-intelligence opponents for single-player cash games and tournaments.</p>
-<p>AI opponents simulate poker play against the user. AI opponents do not provide financial advice, betting advice, or any guarantee of game outcomes. AI behavior may be tuned across the game's economy, tiers, and phases for reasonable difficulty and balance.</p>
-<p>AI opponents are not human players. Users should not rely on AI behavior as representative of real-world poker strategy.</p>
-
-<h2>8. Tournaments</h2>
-<p>PokerRaja offers tournament gameplay against AI opponents.</p>
-<p>All tournaments are play-money events. Entry fees are virtual chips. Prize pools are virtual chips. No real-money prizes are awarded under any circumstance.</p>
-<p>Tournament rules, structures, blind schedules, and prize distributions may vary by tournament variant. Tournament variants may be adjusted, added, or discontinued at the Service Provider's discretion.</p>
-
-<h2>9. Fair Play</h2>
-<p>Users must use the app responsibly and must not intentionally disrupt, manipulate, exploit, or interfere with the normal operation of the game.</p>
-<p>Users must not:</p>
-<ul>
-<li>Exploit software bugs or vulnerabilities</li>
-<li>Interfere with other players' devices or connections</li>
-<li>Manipulate game data or app storage to gain unfair virtual chips</li>
-<li>Modify the application to gain an unfair advantage</li>
-<li>Use emulators, VPNs, or multi-account techniques to exploit first-purchase offers</li>
-<li>Use the app for unlawful purposes</li>
-</ul>
-<p>We may update the app to improve security, stability, gameplay, or performance. The Service Provider reserves the right to restrict access to features or take reasonable corrective action if fair-play violations are detected.</p>
-
-<h2>10. Multiplayer Communication</h2>
-<p>During multiplayer games, the app exchanges game-related information between connected devices to provide gameplay functionality.</p>
-<p>Players are responsible for their own behavior when using multiplayer features, including in-game chat where available.</p>
-<p>Users must not use in-game communication to harass, threaten, abuse, or intentionally disrupt other players.</p>
-
-<h2>11. Advertisements</h2>
-<p>PokerRaja may display advertisements. Advertisements may include:</p>
-<ul>
-<li>Banner advertisements</li>
-<li>Interstitial advertisements</li>
-<li>Rewarded advertisements</li>
-<li>App open advertisements</li>
-</ul>
-<p>Rewarded advertisements may be watched voluntarily by users to earn virtual chips within the Application. Rewarded advertisements are optional. Users may disable all advertisements permanently by purchasing VIP Premium.</p>
-<p>The availability and frequency of advertisements may vary. Advertisements are provided by third-party advertising services.</p>
-
-<h2>12. In-App Purchases — Chip Packs</h2>
-<p>PokerRaja offers virtual chip packs as consumable in-app purchases through Google Play.</p>
-<p>Chip packs deliver virtual chips to your in-game bankroll upon Google Play's confirmation of your purchase. In the rare event that the Application terminates unexpectedly between Google Play's confirmation and chip delivery, PokerRaja's recovery system attempts to credit the purchase on your next launch. Chip packs are consumable — they may be purchased repeatedly.</p>
-<div class="warning">
-<strong>Consumable chip purchases are non-refundable once chips have been delivered</strong>, except where required by Google Play's refund policy or applicable law. Virtual chips that have been spent in gameplay cannot be recovered under any circumstance.
-</div>
-<p>Prices for chip packs are set by Google Play and may vary by country, region, currency, or applicable taxes.</p>
-
-<h2>13. VIP Premium</h2>
-<p>PokerRaja offers an optional VIP Premium upgrade as a one-time, non-consumable in-app purchase.</p>
-<p>VIP Premium is optional and is not required to download or use the basic features of the app.</p>
-<p>VIP Premium benefits include:</p>
-<ul>
-<li>Ad-free gameplay (banner and interstitial advertisements removed)</li>
-<li>Doubled rewarded-advertisement chip rewards (2× standard rewarded-ad amount)</li>
-<li>Free entry to any tournament with a buy-in at or below the threshold specified in the app</li>
-<li>Unlimited WiFi multiplayer access without watching rewarded advertisements</li>
-</ul>
-<p>VIP Premium is a lifetime unlock. It can be restored on reinstall through the "Restore Purchases" function using the same Google account used for the original purchase.</p>
-<p>VIP Premium benefits may be updated or improved in future versions. New benefits may be added; existing benefits will not be removed without a reasonable notice.</p>
-
-<h2>14. Payments and Refunds</h2>
-<p>In-app purchases made through Google Play are processed according to applicable Google Play terms and policies.</p>
-<p>Prices may vary depending on the user's country, region, currency, applicable taxes, or Google Play pricing.</p>
-<h3>14.1 Refund Policy</h3>
-<ul>
-<li><strong>VIP Premium (non-consumable)</strong> — Refund requests are governed by Google Play's refund policy. Refunds may be available within the timeframe permitted by Google Play.</li>
-<li><strong>Chip Packs (consumable)</strong> — Once virtual chips have been delivered to your in-game bankroll, purchases are non-refundable. Refunds for chips that have been spent in gameplay are not available.</li>
-<li><strong>Unauthorized transactions</strong> — If you believe a purchase was made without your authorization, please contact Google Play support directly in accordance with their policy.</li>
-</ul>
-<p>All refund decisions are ultimately made by Google Play in accordance with their refund policy. The Service Provider does not process refunds directly.</p>
-
-<h2>15. Welcome Special</h2>
-<p>PokerRaja may offer a first-purchase "Welcome Special" promotion. This is a discounted virtual chip pack available only to users who have not made any prior in-app purchase.</p>
-<p>Welcome Special eligibility is verified by Google Play's server-side purchase tracking. Attempting to circumvent first-purchase restrictions (for example, through multiple Google accounts, factory resets, VPN use, or emulators) may result in restriction of access to the promotion or other corrective action.</p>
-
-<h2>16. Technical Failures and Virtual Chip Loss</h2>
-<div class="warning">
-<strong>The Service Provider is not responsible for virtual chip losses caused by technical failures outside its reasonable control.</strong>
-</div>
-<p>Virtual chips, hand history, tournament progress, and other in-game data may be lost due to events including, but not limited to:</p>
-<ul>
-<li>Application crashes, freezes, or forced closures</li>
-<li>Device failure, hardware malfunction, or storage corruption</li>
-<li>Operating system updates, reinstalls, or factory resets</li>
-<li>Uninstallation or clearing of application data</li>
-<li>Network interruptions during multiplayer sessions</li>
-<li>Power loss or battery depletion during gameplay</li>
-<li>Interruption of an in-app purchase transaction before completion</li>
-<li>Device storage becoming full during save operations</li>
-</ul>
-<p>The Service Provider is not responsible for virtual chip losses or game progress losses resulting from such events.</p>
-<p>Where a technical fault is caused by a demonstrable defect in the Application itself (not user error, device malfunction, or third-party systems), the Service Provider may, at its sole discretion, take reasonable steps to restore affected virtual chips. Any such restoration is not guaranteed and does not create an ongoing obligation.</p>
-<p>For in-app purchase transactions that were completed on Google Play but not delivered due to a technical failure, PokerRaja includes recovery mechanisms that attempt to credit the purchase on the next application launch. If a completed purchase has not been credited after a reasonable period, please contact the Service Provider with your Google Play order number using the contact details below.</p>
-
-<h2>17. No Guarantee of Uninterrupted Service</h2>
-<p>We aim to provide a stable and enjoyable experience. However, we cannot guarantee that the app will always operate without interruptions or errors.</p>
-<p>The app may be affected by:</p>
-<ul>
-<li>Device compatibility</li>
-<li>WiFi or hotspot connectivity</li>
-<li>Network interruptions</li>
-<li>Operating system updates</li>
-<li>Device performance</li>
-<li>Software errors or bugs</li>
-</ul>
-<p>We may update, modify, improve, or discontinue features when necessary.</p>
-
-<h2>18. Updates</h2>
-<p>We may release updates to improve:</p>
-<ul>
-<li>Gameplay</li>
-<li>Security</li>
-<li>Performance</li>
-<li>Stability</li>
-<li>Compatibility</li>
-<li>Features</li>
-</ul>
-<p>For the best multiplayer experience, players should use the latest compatible version of PokerRaja. Different app versions may not always be fully compatible during multiplayer gameplay.</p>
-
-<h2>19. Intellectual Property</h2>
-<p>PokerRaja, including its application design, graphics, software, features, and other original content, is protected by applicable intellectual property laws.</p>
-<p>Users may not copy, reproduce, modify, distribute, or reverse engineer the application except where permitted by applicable law.</p>
-
-<h2>20. Country and Jurisdictional Restrictions</h2>
-<p>Poker-themed applications may be subject to specific legal restrictions in certain countries and regions, even when no real-money gambling is involved.</p>
-<p>PokerRaja is intended for entertainment purposes only. Users are responsible for understanding and complying with the laws of their own country or region regarding the download and use of poker-themed applications.</p>
-<p>The Service Provider makes no representation that PokerRaja is appropriate or legally available in every jurisdiction. If the use of poker-themed applications is restricted or prohibited in your jurisdiction, you should not download or use PokerRaja.</p>
-
-<h2>21. Limitation of Liability</h2>
-<p>PokerRaja is provided for entertainment purposes.</p>
-<p>To the extent permitted by applicable law, we are not responsible for losses or damages resulting from:</p>
-<ul>
-<li>Network interruptions</li>
-<li>Device problems or hardware failures</li>
-<li>Loss of virtual chips, game progress, or in-game data</li>
-<li>Multiplayer connection problems</li>
-<li>Software errors or bugs</li>
-<li>Third-party advertisements or services</li>
-<li>User's failure to comply with local laws</li>
-</ul>
-<p>Nothing in these Terms limits any rights that cannot be excluded under applicable law.</p>
-
-<h2>22. Governing Law &amp; Jurisdiction</h2>
-<p>These Terms of Service are governed by the laws of <strong>India</strong>. Any disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the courts of <strong>Hyderabad, Telangana, India</strong>.</p>
-
-<h2>23. Changes to These Terms</h2>
-<p>We may update these Terms of Service from time to time.</p>
-<p>Any updated version may be published within the app or on our website. Continued use of PokerRaja after changes become effective may constitute acceptance of the updated Terms.</p>
-
-<h2>24. Contact</h2>
-<p>If you have questions about these Terms of Service, please contact us through the contact information below or through the PokerRaja app.</p>
-
-<div class="contact">
-<h3>💬 Have Questions?</h3>
-<p>If you have any questions about these Terms of Service, feel free to reach out.</p>
-<p><strong>Developer:</strong> Lipi-Apps (Sangeetha)</p>
-<p><strong>Address:</strong> 1/395 poriyalar nagar 1st street, thiruppalai,<br>madurai, Tamil Nadu , India – 625014</p>
-<p>📧</p>
-<a href="mailto:sangeetha1990a@gmail.com">sangeetha1990a@gmail.com</a>
-</div>
-
-<div class="footer-nav">
-<a href="/lipiapps/privacy-poker-raja.html">Privacy Policy</a>
-<a href="/lipiapps/">← Back to Legal</a>
-</div>
-
-</div>
 </body>
 </html>
